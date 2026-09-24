@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#02040a">
+<meta name="description" content="Nexus — Advanced Discord Anti-Nuke Security">
+<title>Nexus — Anti Nuke</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+html,body{
+width:100%;
+height:100%;
+overflow:hidden;
+font-family:Arial,Helvetica,sans-serif;
+background:#02040a;
+color:white
+}
+
+body{
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+background:
+radial-gradient(circle at 50% 50%,rgba(0,140,255,.16),transparent 32%),
+radial-gradient(circle at 20% 20%,rgba(0,170,255,.08),transparent 35%),
+radial-gradient(circle at 80% 80%,rgba(0,70,255,.08),transparent 40%),
+#02040a
+}
+
+/* SPACE */
+body:before{
+content:"";
+position:fixed;
+inset:0;
+background-image:
+radial-gradient(circle,rgba(255,255,255,.9) 1px,transparent 1.4px),
+radial-gradient(circle,rgba(50,170,255,.8) 1px,transparent 1.4px),
+radial-gradient(circle,rgba(255,255,255,.5) .8px,transparent 1.2px);
+background-size:110px 110px,170px 170px,240px 240px;
+background-position:10px 30px,70px 90px,120px 40px;
+opacity:.6;
+pointer-events:none
+}
+
+body:after{
+content:"";
+position:fixed;
+width:65vw;
+height:65vw;
+max-width:900px;
+max-height:900px;
+border-radius:50%;
+background:radial-gradient(circle,rgba(0,140,255,.13),transparent 68%);
+filter:blur(25px);
+animation:pulse 8s ease-in-out infinite;
+pointer-events:none
+}
+
+@keyframes pulse{
+50%{transform:scale(1.08);opacity:.8}
+}
+
+main{
+position:relative;
+z-index:2;
+width:100%;
+text-align:center;
+padding:30px
+}
+
+.brand{
+display:inline-flex;
+align-items:center;
+gap:10px;
+margin-bottom:28px;
+font-size:13px;
+font-weight:bold;
+letter-spacing:.38em;
+color:#bfe8ff;
+text-transform:uppercase
+}
+
+.dot{
+width:8px;
+height:8px;
+border-radius:50%;
+background:#00b7ff;
+box-shadow:0 0 10px #00aaff,0 0 28px #008cff
+}
+
+h1{
+font-size:clamp(65px,15vw,190px);
+font-weight:950;
+line-height:.85;
+letter-spacing:-.07em;
+color:white;
+text-transform:uppercase;
+text-shadow:
+0 0 8px white,
+0 0 22px #00aaff,
+0 0 50px #0077ff,
+0 0 100px rgba(0,100,255,.5)
+}
+
+.line{
+width:min(430px,65vw);
+height:1px;
+margin:35px auto 23px;
+background:linear-gradient(
+90deg,
+transparent,
+rgba(0,170,255,.2),
+#00bfff,
+rgba(0,170,255,.2),
+transparent
+);
+box-shadow:0 0 15px #008cff
+}
+
+.subtitle{
+font-size:14px;
+letter-spacing:.35em;
+text-transform:uppercase;
+color:rgba(210,235,255,.7);
+margin-bottom:35px
+}
+
+.discord{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:11px;
+padding:15px 27px;
+min-width:220px;
+border:1px solid rgba(0,190,255,.6);
+border-radius:12px;
+background:rgba(0,120,255,.08);
+color:white;
+text-decoration:none;
+font-size:13px;
+font-weight:bold;
+letter-spacing:.12em;
+transition:.25s;
+box-shadow:0 0 18px rgba(0,140,255,.15)
+}
+
+.discord:hover{
+transform:translateY(-3px);
+border-color:#00c8ff;
+background:rgba(0,150,255,.18);
+box-shadow:
+0 0 20px rgba(0,170,255,.45),
+0 0 60px rgba(0,100,255,.2)
+}
+
+.discord svg{
+width:19px;
+height:19px;
+fill:white
+}
+
+.footer{
+position:fixed;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+font-size:10px;
+letter-spacing:.2em;
+color:rgba(160,210,240,.4);
+white-space:nowrap
+}
+
+@media(max-width:600px){
+.brand{font-size:10px;letter-spacing:.25em}
+.subtitle{font-size:11px;letter-spacing:.2em}
+.discord{min-width:190px;padding:14px 20px}
+.footer{font-size:8px}
+}
+</style>
+</head>
+
+<body>
+
+<main>
+<div class="brand">
+<span class="dot"></span>
+NEXUS SECURITY
+</div>
+
+<h1>ANTI NUKE</h1>
+
+<div class="line"></div>
+
+<div class="subtitle">
+Discord Security
+</div>
+
+<a class="discord"
+href="https://discord.gg/a9NEaNt4As"
+target="_blank"
+rel="noopener noreferrer">
+
+<svg viewBox="0 0 24 24">
+<path d="M19.54 0H4.46C3.39 0 2.52.87 2.52 1.94v20.12c0 1.07.87 1.94 1.94 1.94h15.08c1.07 0 1.94-.87 1.94-1.94V1.94C21.48.87 20.61 0 19.54 0zM8.1 11.16c-.76 0-1.37-.68-1.37-1.51s.62-1.51 1.37-1.51 1.38.68 1.38 1.51-.62 1.51-1.38 1.51zm7.8 0c-.76 0-1.38-.68-1.38-1.51s.62-1.51 1.38-1.51 1.37.68 1.37 1.51-.61 1.51-1.37 1.51z"/>
+</svg>
+
+JOIN NEXUS
+</a>
+</main>
+
+<div class="footer">
+NEXUS SECURITY • OFFICIAL COMMUNITY
+</div>
+
+</body>
+</html>
